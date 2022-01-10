@@ -20,7 +20,7 @@
         <ul>
             <li>
                 <strong>
-                    <?php echo $user1-> getUser() . $Prodotto1->getProdotto()?>
+                    <?php echo $user1-> getUser() . $Prodotto1->getProdotto() . '<br>'. $user1->getSconto()?>
                 </strong>
             </li>
         </ul>
