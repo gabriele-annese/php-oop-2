@@ -1,6 +1,7 @@
 <?php
     require_once __DIR__ . '/oop/prodotto.php';
     require_once __DIR__ . '/oop/user.php';
+    require_once __DIR__ . '/oop/categoria.php';
 ?>
 
 <!DOCTYPE html>
@@ -15,12 +16,13 @@
 <body>
     <section class="container">
         <?php $user1 = new User('Gabriele', 'Annese' , 19 );
-              $Prodotto1 = new Prodotto('MacBook Air M1', 800, 'lorem ipsum')
+              $Prodotto1 = new Prodotto('MacBook Air M1', 800, 'lorem ipsum');
+              $Categoria1 = new Categoria('informatica');
          ?>
         <ul>
             <li>
                 <strong>
-                    <?php echo $user1-> getUser() . $Prodotto1->getProdotto() . '<br>'. $user1->getSconto()?>
+                    <?php echo $user1-> getUser() . $Prodotto1->getProdotto() . '<br>'. $user1->getSconto() . '<br>' .$Categoria1->getCategoria()?>
                 </strong>
             </li>
         </ul>
